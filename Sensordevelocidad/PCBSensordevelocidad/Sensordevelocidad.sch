@@ -1,0 +1,317 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sensor de velocidad"
+Date "29/06/2020"
+Rev "0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 "Verónica Ríos Vargas"
+Comment4 "Diseño:"
+$EndDescr
+$Comp
+L Sensor-de-velocidad-rescue:TCRT5000-TCRT5000 U1
+U 1 1 5EF6E61D
+P 5350 3050
+F 0 "U1" H 5350 3415 50  0000 C CNN
+F 1 "TCRT5000" H 5350 3324 50  0000 C CNN
+F 2 "TCRT5000:OPTO_TCRT5000" H 5350 3050 50  0001 L BNN
+F 3 "Vishay" H 5350 3050 50  0001 L BNN
+F 4 "7.2mm" H 5350 3050 50  0001 L BNN "Campo4"
+F 5 "Manufacturer recommendations" H 5350 3050 50  0001 L BNN "Campo5"
+F 6 "1.7" H 5350 3050 50  0001 L BNN "Campo6"
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EF6F017
+P 4850 2750
+F 0 "R1" H 4920 2796 50  0000 L CNN
+F 1 "100" H 4920 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4780 2750 50  0001 C CNN
+F 3 "~" H 4850 2750 50  0001 C CNN
+	1    4850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EF6F9F3
+P 5750 3550
+F 0 "R2" H 5820 3596 50  0000 L CNN
+F 1 "4.7K" H 5820 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5680 3550 50  0001 C CNN
+F 3 "~" H 5750 3550 50  0001 C CNN
+	1    5750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EF70653
+P 5050 3750
+F 0 "#PWR02" H 5050 3500 50  0001 C CNN
+F 1 "GND" H 5055 3577 50  0000 C CNN
+F 2 "" H 5050 3750 50  0001 C CNN
+F 3 "" H 5050 3750 50  0001 C CNN
+	1    5050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3150 5750 3150
+Wire Wire Line
+	5050 3700 5050 3750
+Wire Wire Line
+	5050 3150 5050 3700
+Connection ~ 5050 3700
+Wire Wire Line
+	5050 3700 5750 3700
+Wire Wire Line
+	5050 2950 4850 2950
+Wire Wire Line
+	4850 2950 4850 2900
+Wire Wire Line
+	4850 2600 5650 2600
+Wire Wire Line
+	5650 2600 5650 2950
+$Comp
+L power:+5V #PWR01
+U 1 1 5EF73782
+P 4850 2300
+F 0 "#PWR01" H 4850 2150 50  0001 C CNN
+F 1 "+5V" H 4865 2473 50  0000 C CNN
+F 2 "" H 4850 2300 50  0001 C CNN
+F 3 "" H 4850 2300 50  0001 C CNN
+	1    4850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2600 4850 2450
+Connection ~ 4850 2600
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EFC34AD
+P 6250 2050
+F 0 "#FLG0101" H 6250 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 6250 2223 50  0000 C CNN
+F 2 "" H 6250 2050 50  0001 C CNN
+F 3 "~" H 6250 2050 50  0001 C CNN
+	1    6250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5EFC3A2D
+P 6250 2200
+F 0 "#PWR0101" H 6250 1950 50  0001 C CNN
+F 1 "GND" H 6255 2027 50  0000 C CNN
+F 2 "" H 6250 2200 50  0001 C CNN
+F 3 "" H 6250 2200 50  0001 C CNN
+	1    6250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2200 6250 2150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EFC51B2
+P 5150 2400
+F 0 "#FLG0102" H 5150 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 2573 50  0000 C CNN
+F 2 "" H 5150 2400 50  0001 C CNN
+F 3 "~" H 5150 2400 50  0001 C CNN
+	1    5150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2400 4850 2400
+Connection ~ 4850 2400
+Wire Wire Line
+	4850 2400 4850 2300
+Wire Notes Line
+	3950 4850 3950 7550
+Wire Notes Line
+	3950 7550 1250 7550
+Wire Notes Line
+	1250 7550 1250 4850
+Wire Notes Line
+	1250 4850 3950 4850
+$Comp
+L Device:R R3
+U 1 1 5EFCB459
+P 1600 5850
+F 0 "R3" H 1670 5896 50  0000 L CNN
+F 1 "R" H 1670 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1530 5850 50  0001 C CNN
+F 3 "~" H 1600 5850 50  0001 C CNN
+	1    1600 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5EFCBE16
+P 1600 6750
+F 0 "#PWR03" H 1600 6500 50  0001 C CNN
+F 1 "GND" H 1605 6577 50  0000 C CNN
+F 2 "" H 1600 6750 50  0001 C CNN
+F 3 "" H 1600 6750 50  0001 C CNN
+	1    1600 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EFCA59F
+P 1600 6300
+F 0 "D1" V 1639 6183 50  0000 R CNN
+F 1 "LED" V 1548 6183 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 1600 6300 50  0001 C CNN
+F 3 "~" H 1600 6300 50  0001 C CNN
+	1    1600 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EFC9C8D
+P 1600 5350
+F 0 "TP1" H 1658 5468 50  0000 L CNN
+F 1 "TestPoint" H 1658 5377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 1800 5350 50  0001 C CNN
+F 3 "~" H 1800 5350 50  0001 C CNN
+	1    1600 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5350 1600 5450
+Wire Wire Line
+	1600 6150 1600 6000
+Wire Wire Line
+	1600 6750 1600 6450
+Wire Wire Line
+	1600 5450 2100 5450
+Connection ~ 1600 5450
+Wire Wire Line
+	1600 5450 1600 5700
+$Comp
+L power:+5V #PWR04
+U 1 1 5EFCFF07
+P 2100 5450
+F 0 "#PWR04" H 2100 5300 50  0001 C CNN
+F 1 "+5V" H 2115 5623 50  0000 C CNN
+F 2 "" H 2100 5450 50  0001 C CNN
+F 3 "" H 2100 5450 50  0001 C CNN
+	1    2100 5450
+	1    0    0    -1  
+$EndComp
+Text Notes 2300 4800 0    50   ~ 0
+Puntos de prueba\n
+Text Notes 1500 7200 0    50   ~ 0
+Alimentación\n
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EFD2219
+P 3050 5300
+F 0 "TP2" H 3108 5418 50  0000 L CNN
+F 1 "TestPoint" H 3108 5327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3250 5300 50  0001 C CNN
+F 3 "~" H 3250 5300 50  0001 C CNN
+	1    3050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5EFD2948
+P 3050 5750
+F 0 "R4" H 3120 5796 50  0000 L CNN
+F 1 "R" H 3120 5705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2980 5750 50  0001 C CNN
+F 3 "~" H 3050 5750 50  0001 C CNN
+	1    3050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5EFD3092
+P 3050 6300
+F 0 "D2" V 3089 6183 50  0000 R CNN
+F 1 "LED" V 2998 6183 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 3050 6300 50  0001 C CNN
+F 3 "~" H 3050 6300 50  0001 C CNN
+	1    3050 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5EFD3B18
+P 3050 6750
+F 0 "#PWR05" H 3050 6500 50  0001 C CNN
+F 1 "GND" H 3055 6577 50  0000 C CNN
+F 2 "" H 3050 6750 50  0001 C CNN
+F 3 "" H 3050 6750 50  0001 C CNN
+	1    3050 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5300 3050 5450
+Wire Wire Line
+	3050 5900 3050 6150
+Wire Wire Line
+	3050 6450 3050 6750
+Text Notes 2950 7200 0    50   ~ 0
+Salida\n
+Wire Wire Line
+	3050 5450 3450 5450
+Connection ~ 3050 5450
+Wire Wire Line
+	3050 5450 3050 5600
+Text Label 3350 5450 0    50   ~ 0
+out
+Wire Notes Line
+	7750 1500 7750 4400
+Wire Notes Line
+	7750 4400 3750 4400
+Wire Notes Line
+	3750 4400 3750 1500
+Wire Notes Line
+	3750 1500 7750 1500
+Text Notes 5650 1450 0    50   ~ 0
+Circuito\n
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 5EFD1FF6
+P 6350 3050
+F 0 "J1" H 6378 3076 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 6378 2985 50  0000 L CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502382-0370_1x03-1MP_P1.25mm_Vertical" H 6350 3050 50  0001 C CNN
+F 3 "~" H 6350 3050 50  0001 C CNN
+	1    6350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3150 5750 3400
+Wire Wire Line
+	5750 3150 6150 3150
+Connection ~ 5750 3150
+Wire Wire Line
+	6150 3050 5800 3050
+Wire Wire Line
+	5800 3050 5800 2450
+Wire Wire Line
+	5800 2450 4850 2450
+Connection ~ 4850 2450
+Wire Wire Line
+	4850 2450 4850 2400
+Wire Wire Line
+	6150 2950 6150 2600
+Wire Wire Line
+	6150 2600 6000 2600
+Wire Wire Line
+	6000 2600 6000 2150
+Wire Wire Line
+	6000 2150 6250 2150
+Connection ~ 6250 2150
+Wire Wire Line
+	6250 2150 6250 2050
+$EndSCHEMATC
