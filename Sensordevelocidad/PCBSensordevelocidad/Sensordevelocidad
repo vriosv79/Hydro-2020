@@ -1,0 +1,25 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>C:\Users\Usuario\Desktop\kiCAD\Sensor de velocidad\Sensor de velocidad.sch</h1>
+    <p>30/06/2020 1:09:37 a. m.</p>
+    <p>Eeschema (5.1.5)-3</p>
+    <p><b>Component Count:</b>10</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>D1, D2</td><td>2</td><td>LED</td><td>Device:LED</td><td>LED_THT:LED_D3.0mm</td><td>Light emitting diode</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>Conn_01x01_Female</td><td>Connector:Conn_01x01_Female</td><td>Connector_Molex:Molex_CLIK-Mate_502382-0370_1x03-1MP_P1.25mm_Vertical</td><td>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>100</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2</td><td>1</td><td>4.7K</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R3, R4</td><td>2</td><td>R</td><td>Device:R</td><td>Resistor_SMD:R_0805_2012Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>TCRT5000</td><td>Sensor-de-velocidad-rescue:TCRT5000-TCRT5000</td><td>TCRT5000:OPTO_TCRT5000</td><td></td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
